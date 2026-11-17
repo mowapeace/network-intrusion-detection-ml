@@ -28,6 +28,30 @@ This project compares multiple machine learning algorithms for detecting network
 - Pandas
 - Matplotlib
 
+  ## Results
+
+**Best model: Random Forest**
+
+| Metric | Score |
+|---|---|
+| Accuracy | 99.46% |
+| Precision | 98.76% |
+| Recall | 98.59% |
+| F1-score | 98.67% |
+
+**Key findings:**
+- Random Forest, Decision Tree and Gradient Boosting all performed strongly, with scores of about 98–99% across all metrics.
+- KNN performed well on accuracy (about 97%) but had a lower F1-score (about 92%).
+- Logistic Regression and Naive Bayes performed worst. Naive Bayes had high recall but very low precision, meaning it raised many false alarms.
+
+## How to Run
+
+1. Open `Intrusion_detection_project.ipynb` in Google Colab.
+2. Download the UNSW-NB15 dataset (files `UNSW-NB15_1.csv` to `UNSW-NB15_4.csv`) from the official UNSW website.
+3. Upload the CSV files to a Google Drive folder at `MyDrive/IDSDataset`.
+4. Install the required libraries: `pip install -r Requirement.txt`
+5. Run all cells.
+
 ## Author
 
 Adeboye Mowafoluwa peace
